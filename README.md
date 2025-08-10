@@ -8,6 +8,6 @@
 - With a solid understanding of **HTML, CSS, and basic JavaScript**, you can easily customize AI-generated templates to suit your own needs.  
 
 
-![[1.png]](Mywebsite/1.png)
 
+![Alt text](https://example.com/path/to/1.png).
 
