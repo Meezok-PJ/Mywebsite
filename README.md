@@ -8,5 +8,5 @@
 - With a solid understanding of **HTML, CSS, and basic JavaScript**, you can easily customize AI-generated templates to suit your own needs.  
 
 
-![[Pasted image 20250810201627.png]]
+[[Pasted image 20250810201627.png]]
 
