@@ -8,5 +8,5 @@
 - With a solid understanding of **HTML, CSS, and basic JavaScript**, you can easily customize AI-generated templates to suit your own needs.
 
 
-![1.png](https://example.com/path/to/1.png)
+![hello](https://example.com/path/to/1.png)
 
