@@ -3,118 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEEZOK - Purple Team Cybersecurity Specialist</title>
+    <title>Mohammed Al-Balushi | Cybersecurity & SOC Analyst</title>
+    <meta name="description" content="Portfolio of Mohammed Al-Balushi (Meezok) - SOC Analyst Trainee, Cybersecurity Specialist, and Purple Team Researcher.">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 </head>
-<body data-theme="dark">
-    <!-- Animated Background -->
-    <div class="bg-animation">
-        <div class="grid-line" style="top: 20%;"></div>
-        <div class="grid-line" style="left: 30%;"></div>
-        <div class="grid-line" style="top: 60%;"></div>
-        <div class="grid-line" style="left: 70%;"></div>
-    </div>
+<body>
 
     <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">MEEZOK</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#knowledge">Knowledge</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-            <div class="theme-toggle" onclick="toggleTheme()"></div>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">
+                    <span class="logo-dot"></span>
+                    MEEZOK
+                </a>
+
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                </ul>
+
+                <div class="header-actions">
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                    <a href="CV.pdf" download class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download CV
+                    </a>
+                    <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="binary-bg">
-            <div class="binary-text" style="left: 10%; animation-delay: 0s;"><span class="gradient">01001000 01100001 01100011 01101011</span></div>
-            <div class="binary-text" style="left: 30%; animation-delay: 3s;"><span class="gradient">11010011 10101010 01010101 11110000</span></div>
-            <div class="binary-text" style="left: 50%; animation-delay: 6s;"><span class="gradient">1010101 11001100 10101010 001100110</span></div>
-            <div class="binary-text" style="left: 70%; animation-delay: 9s;"><span class="gradient">11111111 00000000 10101010 01010101</span></div>
-            <div class="binary-text" style="left: 90%; animation-delay: 12s;"><span class="gradient">01100011 01111001 01100010 01100101</span></div>
-        </div>
-        
-        <div class="hero-content">
-            <h1><span class="gradient">Mohammed al Balushi</span></h1>
-            <h3 class="gradient">Analyze → Exploit → Defend — The Purple Team Way</h3>
-            <p style="font-size: 1rem; color: var(--purple-primary);">I’m Mohammed, aka "Meezok",a cybersecurity student passionate about Red & Blue Teaming. Explore my projects and journey into the Purple Team world.</p>
-        </div>
-        
-        <div class="scroll-indicator">
-            <div style="width: 2px; height: 30px; background: var(--purple-primary); margin: 0 auto; opacity: 0.7;"></div>
-        </div>
-    </section>
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content animate-on-scroll">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        SOC Analyst Trainee @ Oman International Airport
+                    </div>
+                    
+                    <h1 class="hero-headline">Mohammed Al-Balushi</h1>
+                    <p class="hero-subtitle">Analyze → Exploit → Defend — The Purple Team Way</p>
+                    
+                    <p class="hero-bio">
+                        Cybersecurity B.Tech student at UTAS Muscat specializing in Security Operations (SOC), 
+                        Active Directory security, and threat detection. Bridging offensive insight with defensive 
+                        resilience to safeguard modern enterprise environments.
+                    </p>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <p>I’m a Cybersecurity student at the University of Technology and Applied Science with a strong interest in Purple Teaming , the balance of attack and defense.I’m building skills that bridge penetration testing, monitoring, and defense strategies.</p>
-            <br>
-            <p>My focus is learning how attackers think while strengthening defenses through SOC practices and Active Directory security fundamentals. I enjoy hands-on labs, capture-the-flag challenges, and building environments where theory meets real-world security.</p>
-            <br>
-            <p>My career goal is to grow from a SOC Analyst into a security professional who can both test and protect Active Directory environments, combining offensive insight with defensive resilience.</p>
-        </div>
-    </section>
+                    <div class="hero-actions">
+                        <a href="CV.pdf" download class="btn btn-primary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download PDF CV
+                        </a>
+                        <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub Profile
+                        </a>
+                        <a href="mailto:contact@meezok.security" class="btn btn-icon" aria-label="Contact Email">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Knowledge Section -->
-    <section id="knowledge">
-        <h2 class="section-title">My Knowledge Arsenal</h2>
-        <div class="knowledge-container">
-            <!-- Blue Team (Defense) -->
-            <div class="knowledge-side blue-team">
-                <h3>🛡️ Blue Team - Defense</h3>
-                <div class="skill-item">
-                    <strong>Security Monitoring & SOC Operations</strong>
-                    <p>Currently developing SOC skills through TryHackMe and Hack The Box labs, focusing on fundamental monitoring and incident response.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Network Security</strong>
-                    <p>Studying Cisco networking basics and building hands-on labs with pfSense firewall in virtual environments.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Infrastructure Defense</strong>
-                    <p>Set up Ubuntu Server with OpenWebUI and Ollama library, experimenting with access control and secure configurations.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>System Hardening</strong>
-                    <p>Solid Linux background, practicing fundamental system security configurations and hardening techniques.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Active Directory Security</strong>
-                    <p>Currently learning the fundamentals of Windows AD with a focus on defensive concepts and lab-based practice.</p>
-                </div>
-            </div>
-
-            <!-- Red Team (Offense) -->
-            <div class="knowledge-side red-team">
-                <h3>⚔️ Red Team - Offense</h3>
-                <div class="skill-item">
-                    <strong>Penetration Testing</strong>
-                    <p>Hands-on experience with pentesting labs and methodologies, supported by an intermediate certification in Red Teaming.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Offensive Python Development</strong>
-                    <p>Revisiting Python to create security tools and automation scripts with an attacker’s mindset.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Container Security Testing</strong>
-                    <p>Developed Bash scripts for spinning up Dockerized Kali Linux environments to test offensive tools safely.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>OT Security Research</strong>
-                    <p>Explored OT security by experimenting with Modbus protocol exploitation in industrial control systems.</p>
-                </div>
-                <div class="skill-item">
-                    <strong>Vulnerability Assessment</strong>
-                    <p>Practical experience with tools and workflows for identifying and reporting system weaknesses.</p>
+                <div class="hero-avatar-container animate-on-scroll">
+                    <div class="hero-avatar-wrapper">
+                        <img src="./images/meezok.png" alt="Mohammed Al-Balushi" class="hero-avatar-img">
+                    </div>
+                    <div class="hero-avatar-glow"></div>
                 </div>
             </div>
         </div>
@@ -122,107 +85,343 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxs-server'></i> <strong>Infrastructure</strong></span>
-                </div>
-                <div class="project-info">
-                    <h3>AI Services Server Hosting</h3>
-                    <p>Deployed Ubuntu Server running Ollama with OpenWebUI, integrated with access control for secure use in an educational setting.</p>
-                </div>
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">// Engineering & Research</span>
+                <h2 class="section-title">Featured Security Projects</h2>
             </div>
 
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxl-docker' ></i> <strong>Container Security</strong></span>
+            <div class="projects-grid">
+                <!-- Project 1: MADFA -->
+                <div class="project-card animate-on-scroll">
+                    <div>
+                        <div class="project-header">
+                            <span class="project-badge">AI & Pentesting</span>
+                            <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">MADFA — AI Pentesting Engine</h3>
+                        <p class="project-desc">
+                            Autonomous AI-driven penetration testing framework designed to analyze web vulnerabilities, 
+                            generate exploit vectors, and output structured remediation blueprints for security operators.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">LLM Agents</span>
+                        <span class="project-tag">Vulnerability Audit</span>
+                        <span class="project-tag">Automation</span>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Docker Security Environment</h3>
-                    <p>Built Bash automation scripts to launch Docker Compose labs with Kali Linux containers for safe pentesting practice.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxs-network-chart'></i> <strong>Network Storage</strong></span>
+                <!-- Project 2: SOC-assist -->
+                <div class="project-card animate-on-scroll">
+                    <div>
+                        <div class="project-header">
+                            <span class="project-badge">SIEM Operations</span>
+                            <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">SOC-assist — Log Sanitizer</h3>
+                        <p class="project-desc">
+                            High-throughput SIEM log sanitizer and alert filter. Removes telemetry noise, masks PII data, 
+                            and formats raw syslog streams for automated triage inside SOC monitoring dashboards.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Go</span>
+                        <span class="project-tag">SIEM</span>
+                        <span class="project-tag">Log Filtering</span>
+                        <span class="project-tag">Regex Engine</span>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>NAS System Implementation</h3>
-                    <p>Configured a Network Attached Storage server to host persistent notes and enable seamless PC synchronization for documentation.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxs-cloud'></i> <strong>Cloud Development</strong></span>
+                <!-- Project 3: Splunk SIEM AD Lab -->
+                <div class="project-card animate-on-scroll">
+                    <div>
+                        <div class="project-header">
+                            <span class="project-badge">Infrastructure Lab</span>
+                            <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">Splunk SIEM AD Lab (4-Node)</h3>
+                        <p class="project-desc">
+                            Virtual Active Directory environment featuring Domain Controllers, Windows endpoints, and Splunk Universal Forwarders for auditing Kerberoasting, AS-REP roasting, and lateral movement.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Splunk</span>
+                        <span class="project-tag">Active Directory</span>
+                        <span class="project-tag">Proxmox / VMware</span>
+                        <span class="project-tag">Sysmon</span>
+                    </div>
                 </div>
-                <div class="project-info">
-                    <h3>Cloud-Based Dev Environment</h3>
-                    <p>Deployed Code Server with persistent storage inside Docker for secure, portable development workflows.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxs-file-find' ></i> <strong>Security Research</strong></span>
-                </div>
-                <div class="project-info">
-                    <h3>OT Security Research</h3>
-                    <p>Conducted research on OT security fundamentals and Modbus protocol exploitation for industrial environments.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-preview">
-                    <span class="gradient"><i class='bx bxs-file-find' ></i> <strong>Educational Research</strong></span>
-                </div>
-                <div class="project-info">
-                    <h3>Effectiveness of Visual Learning</h3>
-                    <p>Studied how visual learning impacts comprehension and retention, analyzing its role in education and training.</p>
+                <!-- Project 4: XScp -->
+                <div class="project-card animate-on-scroll">
+                    <div>
+                        <div class="project-header">
+                            <span class="project-badge">Security Tooling</span>
+                            <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                        <h3 class="project-title">XScp — Secure File Delivery</h3>
+                        <p class="project-desc">
+                            Encrypted command-line transfer tool enabling secure, low-footprint file exfiltration and payload delivery over custom TCP wrappers with signature evasion capabilities.
+                        </p>
+                    </div>
+                    <div class="project-tags">
+                        <span class="project-tag">Go</span>
+                        <span class="project-tag">Network Encryption</span>
+                        <span class="project-tag">CLI Tool</span>
+                        <span class="project-tag">Security Testing</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tools & Technologies Slider -->
-    <section class="slider-section">
-        <div class="slider-container">
-            <h2 class="slider-title">Tools & Technologies</h2>
-            <div class="list">
-                <div class="item" style="--position: 1">
-                    <img src="images/linux.png" alt="Linux">
+    <!-- Experience & Education Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">// Background & Qualifications</span>
+                <h2 class="section-title">Experience & Education</h2>
+            </div>
+
+            <div class="timeline-grid">
+                <!-- Experience Column -->
+                <div>
+                    <h3 class="timeline-column-title animate-on-scroll">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                        Professional Experience
+                    </h3>
+                    
+                    <div class="timeline-list">
+                        <div class="experience-card animate-on-scroll">
+                            <span class="experience-period">06/2026 — 08/2026</span>
+                            <h4 class="experience-role">SOC Analyst Trainee</h4>
+                            <div class="experience-org">Oman Airports (Oman International Airport)</div>
+                            <p class="experience-details">
+                                Conducted daily SIEM security monitoring, log auditing, and threat detection. 
+                                Analyzed intrusion alerts, assisted in incident triage, and refined SOC containment procedures.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="item" style="--position: 2">
-                    <img src="images/docker.webp" alt="Docker">
-                </div>
-                <div class="item" style="--position: 3">
-                    <img src="images/JS.webp" alt="JavaScript">
-                </div>
-                <div class="item" style="--position: 4">
-                    <img src="images/python.webp" alt="Python">
-                </div>
-                <div class="item" style="--position: 5">
-                    <img src="images/Bash.svg" alt="Bash">
-                </div>
-                <div class="item" style="--position: 6">
-                    <img src="images/github.png" alt="github">
-                </div>
-                <div class="item" style="--position: 7">
-                    <img src="images/insta.png" alt="insta">
-                </div>
-                <div class="item" style="--position: 8">
-                    <img src="images/Note.png" alt="Documentation">
-                </div>
-                <div class="item" style="--position: 9">
-                    <img src="images/KALIwebp.webp" alt="Kali Linux">
+
+                <!-- Education & Certifications Column -->
+                <div>
+                    <h3 class="timeline-column-title animate-on-scroll">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                        Education & Certifications
+                    </h3>
+                    
+                    <div class="timeline-list">
+                        <div class="experience-card animate-on-scroll">
+                            <span class="experience-period">2022 — Present</span>
+                            <h4 class="experience-role">B.Tech in Cybersecurity (GPA 3.23)</h4>
+                            <div class="experience-org">University of Technology & Applied Sciences (UTAS Muscat)</div>
+                            <p class="experience-details">
+                                Rigorous coursework in network security, system hardening, cryptography, software development, 
+                                and digital forensics.
+                            </p>
+                        </div>
+
+                        <div class="experience-card animate-on-scroll">
+                            <span class="experience-period">Verified Certifications</span>
+                            <h4 class="experience-role">Cisco CCNA & TryHackMe Jr PenTester</h4>
+                            <div class="experience-org">Cisco Networking Academy & TryHackMe</div>
+                            <p class="experience-details">
+                                Certified in Cisco Routing & Switching, IP Subnetting, and practical penetration testing methodologies.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">// Technical Arsenal</span>
+                <h2 class="section-title">Skills Matrix</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Security Operations & Defense
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Splunk SIEM</span>
+                        <span class="skill-pill">Incident Response</span>
+                        <span class="skill-pill">Wireshark</span>
+                        <span class="skill-pill">Log Analysis</span>
+                        <span class="skill-pill">Threat Hunting</span>
+                        <span class="skill-pill">SOC Operations</span>
+                        <span class="skill-pill">Sysmon</span>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        Software Development & Scripting
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Go (Golang)</span>
+                        <span class="skill-pill">Python 3</span>
+                        <span class="skill-pill">Bash Scripting</span>
+                        <span class="skill-pill">REST APIs</span>
+                        <span class="skill-pill">Git / GitHub</span>
+                        <span class="skill-pill">Automated Tooling</span>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        Linux & Cloud Infrastructure
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Linux Admin (Ubuntu/Kali)</span>
+                        <span class="skill-pill">Docker Containers</span>
+                        <span class="skill-pill">System Hardening</span>
+                        <span class="skill-pill">Cisco Networking</span>
+                        <span class="skill-pill">Cloud Deployment</span>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-category animate-on-scroll">
+                    <h3 class="skill-category-title">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        Virtualization & Active Directory
+                    </h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill">VMware vSphere</span>
+                        <span class="skill-pill">Proxmox VE</span>
+                        <span class="skill-pill">Active Directory (AD)</span>
+                        <span class="skill-pill">pfSense Firewall</span>
+                        <span class="skill-pill">Modbus / OT Research</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Marquee -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-track">
+                <div class="tool-item">
+                    <img src="./images/linux.png" alt="Linux" class="tool-img">
+                    <span class="tool-name">Linux</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/docker.webp" alt="Docker" class="tool-img">
+                    <span class="tool-name">Docker</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/python.webp" alt="Python" class="tool-img">
+                    <span class="tool-name">Python</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/Bash.svg" alt="Bash" class="tool-img">
+                    <span class="tool-name">Bash</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/github.png" alt="GitHub" class="tool-img">
+                    <span class="tool-name">GitHub</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/KALIwebp.webp" alt="Kali Linux" class="tool-img">
+                    <span class="tool-name">Kali Linux</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/JS.webp" alt="JavaScript" class="tool-img">
+                    <span class="tool-name">JavaScript</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/purple.png" alt="Purple Team" class="tool-img">
+                    <span class="tool-name">Purple Team</span>
+                </div>
+
+                <!-- Duplicate for Seamless Infinite Scrolling -->
+                <div class="tool-item">
+                    <img src="./images/linux.png" alt="Linux" class="tool-img">
+                    <span class="tool-name">Linux</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/docker.webp" alt="Docker" class="tool-img">
+                    <span class="tool-name">Docker</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/python.webp" alt="Python" class="tool-img">
+                    <span class="tool-name">Python</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/Bash.svg" alt="Bash" class="tool-img">
+                    <span class="tool-name">Bash</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/github.png" alt="GitHub" class="tool-img">
+                    <span class="tool-name">GitHub</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/KALIwebp.webp" alt="Kali Linux" class="tool-img">
+                    <span class="tool-name">Kali Linux</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/JS.webp" alt="JavaScript" class="tool-img">
+                    <span class="tool-name">JavaScript</span>
+                </div>
+                <div class="tool-item">
+                    <img src="./images/purple.png" alt="Purple Team" class="tool-img">
+                    <span class="tool-name">Purple Team</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <a href="#" class="logo" style="margin-bottom: 0.75rem;">
+                        <span class="logo-dot"></span>
+                        MEEZOK
+                    </a>
+                    <p style="max-width: 400px; font-size: 0.9rem;">
+                        Cybersecurity Specialist & SOC Analyst Trainee. Dedicated to defending systems through offensive awareness.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/Meezok-PJ" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                    <a href="mailto:contact@meezok.security" class="btn btn-primary">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mohammed Al-Balushi (Meezok). All rights reserved.</p>
+                <p>Designed with Obsdian & Emerald Systems</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 </html>
-
